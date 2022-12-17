@@ -6,16 +6,3 @@ export function getHealthyStatus(array) {
   }
   return 'healthy';
 }
-
-export function getUpgrateHealthyStatus(array) {
-  return array.sort((a, b) => {
-    if (a.health < b.health) {
-      return 1;
-    }
-    if (a.health > b.health) {
-      return -1;
-    }
-
-    return 0;
-  });
-}
