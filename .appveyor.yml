@@ -11,10 +11,7 @@ cache: node_modules
 install:
   - npm install 
 
-build: off 
-
-build_script:
-  - npm run build
+build: off
 
 test_script:
   - npm run lint && npm test

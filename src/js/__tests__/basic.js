@@ -1,4 +1,4 @@
-import { getHealthyStatus } from '../app.js';
+import getHealthyStatus from '../app.js';
 
 test.each([
   ['someting', { name: 'Маг', health: 30 }, 'wounded'],
@@ -11,4 +11,3 @@ test.each([
     expect(result).toBe(expected);
   },
 );
-
